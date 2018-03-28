@@ -22,7 +22,7 @@ class Bucket() : AggregateRoot() {
     }
 
     fun apply(event: BucketCreated){
-        id = AggregateId(event.Id)
+        id = AggregateId(event.bucketId)
         color = event.color
     }
 }
